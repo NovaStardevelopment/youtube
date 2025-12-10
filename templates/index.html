@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Content</title>
+</head>
+<body>
+    <h1>👋 Welcome, {{ username }}!</h1>
+    <p>This is the main section of your application. You can only see this page because the <strong>login area worked</strong> and set the required session data.</p>
+    
+    <h2>🎉 All Sections Work!</h2>
+    <ul>
+        <li>The **Login Section** in `login.html` submitted your data.</li>
+        <li>The **Backend Logic** in `app.py` validated your credentials.</li>
+        <li>The **Session Management** is keeping you logged in.</li>
+        <li>The **Main Index Section** is now accessible.</li>
+    </ul>
+
+    <p><a href="{{ url_for('logout') }}">Log Out</a></p>
+</body>
+</html>
